@@ -29,8 +29,8 @@ def send_email(to, content):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login("jtech.help2021@gmail.com", "Jtech2021")
-    server.sendmail("jtech.help2021@gmail.com", to, content)
+    server.login("email", "password")
+    server.sendmail("email", to, content)
     server.close()
 
 
@@ -136,7 +136,7 @@ def run():
             content = take_command()
 
             talk("to who?")
-            to = "jakub.p2k19@gmail.com"
+            to = "example@gmail.com"
 
             send_email(to, content)
             talk("Email has been sent")
