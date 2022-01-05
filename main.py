@@ -1,7 +1,10 @@
 import Sofia as S
 import e_d
 
+
 e_d.getE()
+
+# "Main Loop"
 x = 3
 while x > 0:
     S.run()
@@ -11,7 +14,7 @@ while x > 0:
         cmmd = S.take_command()
         if "yes" in cmmd:
             S.talk("Ok so what can i do for you?")
-            x+=50
+            x+=5
         else:
             break
 
