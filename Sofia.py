@@ -67,8 +67,7 @@ def take_command():
             print("Keyboard Interrupt")
             break
 
-    
-# "Main loop"    
+            
 def run():
     command = take_command()
     print(command)
@@ -116,7 +115,7 @@ def run():
         talk("sorry, I have a headache and you are ugly")
 
     elif "are you single" in command:
-        talk('I am in a relationship with Philosophy')
+        talk('I am in a relationship with philosophy')
 
     elif "joke" in command:
         talk(pyjokes.get_joke())
@@ -128,7 +127,7 @@ def run():
         talk("hmm you are not")
 
     elif "you are best" in command:
-        talk("I know, that's because you wrote me")
+        talk("I know...")
 
     elif "send email" in command:
         try:
@@ -136,7 +135,7 @@ def run():
             content = take_command()
 
             talk("to who?")
-            to = "example@gmail.com"
+            to = "example@email.com"
 
             send_email(to, content)
             talk("Email has been sent")
