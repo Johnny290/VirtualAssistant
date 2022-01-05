@@ -1,7 +1,6 @@
 import Sofia as S
 import e_d
 
-
 e_d.getE()
 
 # "Main Loop"
