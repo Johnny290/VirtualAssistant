@@ -15,8 +15,8 @@ engine.setProperty("voice", voices[0].id)
 translator = Translator()
 
 
-MASTER = "John"
-VI = ", my name is Sofia"
+MASTER = "J"
+VI = "my name is Sofia"
 
 
 def talk(text):
