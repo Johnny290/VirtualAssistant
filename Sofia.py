@@ -111,20 +111,11 @@ def run():
         print(translated.text)
         talk(translated.text)
 
-    elif "date" in command:
-        talk("sorry, I have a headache and you are ugly")
-
     elif "are you single" in command:
         talk('I am in a relationship with philosophy')
 
     elif "joke" in command:
         talk(pyjokes.get_joke())
-
-    elif "like me" in command:
-        talk("hahaha hahaha No!")
-
-    elif "you are amazing" in command:
-        talk("hmm you are not")
 
     elif "you are best" in command:
         talk("I know...")
@@ -144,6 +135,6 @@ def run():
             print(e)        
 
     else:
-        talk("I don't know what are you talkin about")
+        talk("I don't know what are you talking about")
     
 
